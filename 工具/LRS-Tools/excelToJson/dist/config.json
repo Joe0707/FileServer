@@ -1,0 +1,7 @@
+{
+    "inputPath": "./table",
+    "outputPaths": [
+        "./json"
+    ],
+    "dtsOutputPath": "."
+}

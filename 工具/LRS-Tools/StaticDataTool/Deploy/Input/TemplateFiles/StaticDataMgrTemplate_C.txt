@@ -1,0 +1,171 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using System.IO;
+using System;
+using StaticData;
+using System.Reflection;
+using GlobalDefine;
+using StaticData.Data;
+using UnityEngine;
+using StaticDataTool;
+
+namespace StaticData
+{
+    public class StaticDataMgr
+    {
+        private static StaticDataMgr instance = null;
+        public static StaticDataMgr Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new StaticDataMgr();
+                return instance;
+            }
+            protected set { instance = value; }
+        }
+
+        // *************				data	 	***************
+		{$DataDefine}
+        //加载数据
+        public void LoadData()
+        {
+			{$LoadData}
+						
+			//定义如型： void SheetNameDataProcess(ClassType data) 的函数, 会被自动调用
+
+            //设置进度
+            Console.WriteLine("Read All Data Done!");
+        }
+
+        //根据指定的数据文件名，创建流。 参数格式：“Strings.bytes”
+        private Stream OpenBinDataFile(string filename)
+        {//
+            var path = FolderCfg.BinFolder() + filename.Substring(0, filename.Length - 6);
+            path = path.Replace('\\', '/');
+            return FileDes.DecryptDataToStream(ConfigManager.Instance.LoadConfigBytes(path));
+
+        }
+
+        void LoadDataBinWorker<ClassType>(string filename, object dic, Action<ClassType> process = null) where ClassType : BaseDataObject, new()
+        {
+            Dictionary<uint, ClassType> dataMap = dic as Dictionary<uint, ClassType>;
+
+            BinaryReader br = null;
+            Stream ds = OpenBinDataFile(filename);
+            br = new BinaryReader(ds);
+            try
+            {
+                while (true)
+                {
+                    ClassType tNewData = new ClassType();
+                    tNewData.ReadFromStream(br);
+                    dataMap.Add(tNewData.mID, tNewData);
+                    if (process != null)
+                    {
+                        process(tNewData);
+                    }
+                }
+            }
+            catch (EndOfStreamException)
+            {
+                Console.WriteLine(filename + "Load Data Done");
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            finally
+            {
+                br.Close();
+                FileDes.CloseStream();
+            }
+            return;
+        }
+    }//class
+    //数据结构基类
+    public abstract class BaseDataObject
+    {
+        public uint mID = 0; // ID
+        public abstract void ReadFromStream(BinaryReader br);
+    }
+    
+    public class StringMgr
+    {
+        static bool mInitialized = false;
+        static ELanguage mLanguage = ELanguage.English;
+		static Dictionary<string, uint> mRefNameToIDMap = new Dictionary<string, uint>();
+        static void Initialize()
+        {
+            mInitialized = true;
+            if(Application.systemLanguage == SystemLanguage.ChineseSimplified || Application.systemLanguage == SystemLanguage.Chinese)
+                mLanguage = ELanguage.S_Chinese;
+            else if(Application.systemLanguage == SystemLanguage.ChineseTraditional)
+            	mLanguage = ELanguage.T_Chinese;
+            else
+                mLanguage = ELanguage.English;
+			//建立引用名到ID的映射
+			mRefNameToIDMap.Clear();
+			foreach(var sd in StaticDataMgr.Instance.mStringsDataMap)
+            {
+				mRefNameToIDMap.Add(sd.Value.mRefName, sd.Key);
+			}
+        }
+		
+		public static string GetByID(uint strID)
+		{
+			return Get(strID);
+		}
+        //查找字符串数据
+        public static string Get(uint strID)
+        {
+            if(mInitialized == false)
+                Initialize();
+            if(StaticDataMgr.Instance.mStringsDataMap.ContainsKey(strID) == false)
+                return "";
+            return StaticDataMgr.Instance.mStringsDataMap[strID].mStrings[(int)mLanguage];
+        }
+        //用引用名称查找字符串
+        public static string Get(string refName)
+        {
+            if(mInitialized == false)
+                Initialize();
+            string retValue = "";
+            if(mRefNameToIDMap.ContainsKey(refName))
+			{
+				retValue = GetByID(mRefNameToIDMap[refName]);
+			}
+            return retValue;
+        }
+        public static bool IsChinese_S
+        {
+            get{
+                if(mInitialized == false)
+                    Initialize();
+                return (mLanguage == ELanguage.S_Chinese);
+            }
+        }
+        public static bool IsChinese_T
+        {
+            get{
+                if(mInitialized == false)
+                    Initialize();
+                return (mLanguage == ELanguage.T_Chinese);
+            }
+        }
+	public static ELanguage Language 
+	{
+		get{
+			if(mInitialized == false)
+				Initialize();
+			return mLanguage;
+		}	
+		set{
+			mLanguage = value;
+		}
+	}
+    }
+}
+
+

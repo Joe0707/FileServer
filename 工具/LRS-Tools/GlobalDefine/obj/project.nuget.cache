@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/S2WciVhNJ8l4eduT0oxGc6AmpNKjW88D3NaK6k0T/GE/2htrmgxnKTfmLM4oa/9Fgr9lGASQrKgEdFltjbxtw==",
+  "success": true,
+  "projectFilePath": "E:\\git\\LRS-BN-Server\\Tools\\GlobalDefine\\GlobalDefine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\T\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

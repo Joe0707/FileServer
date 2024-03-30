@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+		<WindowWidth>28125</WindowWidth>
+		<WindowHeight>12540</WindowHeight>
+		<ProtectStructure>False</ProtectStructure>
+		<ProtectWindows>False</ProtectWindows>
+	</ExcelWorkbook>
+	<Styles>
+		<Style ss:ID="Default" ss:Name="Normal">
+			<Alignment ss:Vertical="Center"/>
+			<Borders/>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+			<Interior/>
+			<NumberFormat/>
+			<Protection/>
+		</Style>
+		<Style ss:ID="s49">
+			<Alignment ss:Vertical="Center"/>
+			<Borders/>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+			<Interior/>
+			<NumberFormat/>
+			<Protection/>
+		</Style>
+		<Style ss:ID="s50">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+		</Style>
+		<Style ss:ID="s51">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+			<NumberFormat/>
+		</Style>
+		<Style ss:ID="s52">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+				<Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+				<Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+				<Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+			</Borders>
+			<Interior ss:Color="#D0CECE" ss:Pattern="Solid"/>
+		</Style>
+		<Style ss:ID="s53">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+				<Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+				<Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+				<Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+			</Borders>
+			<Interior ss:Color="#D0CECE" ss:Pattern="Solid"/>
+			<NumberFormat/>
+		</Style>
+		<Style ss:ID="s54">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+			<NumberFormat ss:Format="@"/>
+		</Style>
+		<Style ss:ID="s55">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+			<Borders/>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+			<Interior/>
+			<NumberFormat/>
+			<Protection/>
+		</Style>
+	</Styles>
+</Workbook>

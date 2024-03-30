@@ -1,0 +1,717 @@
+	/*装备type
+		0	    NONE,
+		1	    HEAD,
+		2	    BODY,
+		3	    MAINHAND,     //主手
+		4	    OFFHAND,      //副手
+		5	    SHOES,
+		6	    ORNAMENT,
+		7	    BOTHHANDS,   //双手
+	*/
+	
+	{
+   "nameSplit":" ",
+   
+   "openGiftcodeMonth":86,
+   
+   "perToMatk":0.5,  
+   "strToPatk":0.5,
+   "overstrToPatk":0.25,
+   "dexToPhit":1.0,
+   "dexToPCrit":1.0,  
+   "wilToMCrit":1.0,  
+   "dexToBlk":1.0,
+   "dexToPry":1.0,
+   "agiToPdCrit":1.0,
+   "agiToIgnoreDef":1.0,
+   "wilToMhit":1.0,
+   "wilToMdCrit":1.0,
+   "vitToHp":0.5,
+   "vitToWgt":350,
+   "overwgtToAgi":250,
+   "agiTowgt":1000,
+   "wAtkToPryDef":0.5 ,   
+   "perToHeal":0.35,
+   "pcritdmg":1000000,
+   "mcritdmg":500000,
+   "pdevdmg":500000,
+   "mdevdmg":500000,
+   "maxdevdmg":900000,
+   
+   
+   
+   "battleEquipStatus":{
+		"overWgt":3,
+		"overWgtHigh":4,
+		"needStr":5,
+		"needStrHigh":6
+   },
+   
+   "firstRechargeLoot":60300,
+   
+   "monthCard":{
+		"loot":0,
+		"dailyMonth":120,
+	   "queenCard":4
+   },
+   
+   "monthCard2":{
+		"loot":0,
+		"queenCard":6
+   },
+   
+   "monthCardCrystal":{
+		"loot":60001
+   },
+   "dailyMonth":240,
+   
+   "endTaskID":415004,
+   
+   "endStory1":699999,
+   
+   "prematureMonth":-60,
+   "retireMonthMin":24,
+   "retireMonthMax":60,
+   "baseWgt":100,
+   
+   "inheritPackID":11,
+   
+   "MVPexp":1.5,
+   "MUPexp":0.8,
+   "Otherexp":1,
+   "skillUpPro":2500,
+   "worshipNum":2,
+   "taskSuccessDialogID":100203,
+   "taskFailDialogID":100204,
+
+   "perkWoundPro":1000000,
+   "perkWoundUpPro":500000,
+   "practicePro":800000,
+   "BornPerkCount":
+   [
+   {"num":0,"pro":100000},
+   {"num":1,"pro":500000},
+   {"num":2,"pro":900000},
+   {"num":3,"pro":1000000}
+   ],
+   
+   "dyingStatus":1,
+   "scaleScreen":1.5,
+
+   "DatingBasePros":
+   [
+	{"title":-1,"pro":1000000,"weightPro":30000},
+	{"title":0,"pro":500000,"weightPro":50000},
+	{"title":1,"pro":50000,"weightPro":20000}
+   ],
+   "DatingGuaranteeTimes":3,
+
+   "MatchMakerBasePros":
+   [
+	{"title":-1,"pro":900000,"weightPro":0},
+	{"title":0,"pro":300000,"weightPro":95000},
+	{"title":1,"pro":30000,"weightPro":5000}
+   ],
+   
+  "DatingPrestigePros":
+   [
+	{"level":0,"pro":[1000000,1000000,0,0,0]},
+	{"level":1,"pro":[1000000,1000000,0,0,0]},
+	{"level":2,"pro":[1000000,1000000,400000,0,0]},
+	{"level":3,"pro":[1000000,1000000,1000000,100000,0]},
+	{"level":4,"pro":[1000000,1000000,1000000,1000000,20000]},
+	{"level":5,"pro":[1000000,1000000,1000000,1000000,1000000]}
+   ],
+   
+  "MatchMakerPrestigePros":
+   [
+	{"level":0,"pro":[1000000,1000000,0,0,0]},
+	{"level":1,"pro":[1000000,1000000,0,0,0]},
+	{"level":2,"pro":[1000000,1000000,500000,0,0]},
+	{"level":3,"pro":[1000000,1000000,1000000,300000,0]},
+	{"level":4,"pro":[1000000,1000000,1000000,1000000,100000]},
+	{"level":5,"pro":[1000000,1000000,1000000,1000000,1000000]}
+   ],
+	
+   "MarryDenialPerkPro":100000,
+   "LendingMarryMonth":127,
+   "MarryRingID":8,
+   "birthPro":50000, 
+   "pregnancyDecay":666666,
+   "twinsPro":11236,
+   "RecruitAge":180,
+   "TavernFemalePro":200000,
+   "TavernFemaleCostPro":80,
+   "TavernHeroCount":[2,5],
+   "TavernRefreshMonth":1,
+   "TavernCrystalRecruitActor":501,
+   "ChildRecruitCostPro":[
+	   {"title":0,"costPro":100},
+	   {"title":1,"costPro":300}
+   ],
+   "MercenaryLeaderCD":3,
+   
+   "hungry":[
+		{"level":0,"name":"SCRIPT_CONST_HUNGRY_NAME_0","des":"SCRIPT_CONST_HUNGRY_DES_0","dialog":100401,"affectIncome":1.0},
+		{"level":1,"birthPro":-2000,"name":"SCRIPT_CONST_HUNGRY_NAME_1","des":"SCRIPT_CONST_HUNGRY_DES_1","dialog":100402,"affectIncome":1.0},
+		{"level":2,"birthPro":-5000,"name":"SCRIPT_CONST_HUNGRY_NAME_2","des":"SCRIPT_CONST_HUNGRY_DES_2","dialog":100403,"affectIncome":1.0},
+		{"level":3,"birthPro":-8000,"name":"SCRIPT_CONST_HUNGRY_NAME_3","des":"SCRIPT_CONST_HUNGRY_DES_3","dialog":100404,"affectIncome":1.0,"hungryPerk":[
+			{"id":11009,"pro":1500}
+		]},
+		{"level":4,"birthPro":-10000,"name":"SCRIPT_CONST_HUNGRY_NAME_4","des":"SCRIPT_CONST_HUNGRY_DES_4","dialog":100405,"affectIncome":0.75,"deathProRatio":20000,"hungryPerk":[
+			{"id":11009,"pro":3000},
+			{"id":11010,"pro":1500}
+		]},
+		{"level":5,"birthPro":-10000,"name":"SCRIPT_CONST_HUNGRY_NAME_5","des":"SCRIPT_CONST_HUNGRY_DES_5","dialog":100406,"affectIncome":0.25,"deathProRatio":40000,"hungryPerk":[
+			{"id":11009,"pro":6000},
+			{"id":11010,"pro":3000}
+		]}
+   ],
+   
+   "femaleUpProps":
+   [
+	{"type":"str","param":-0.1},
+	{"type":"dex","param":0.1},
+	{"type":"agi","param":0.1},
+	{"type":"vit","param":-0.1},
+	{"type":"per","param":0.1},
+	{"type":"wil","param":-0.1}
+   ],
+   
+  "actorUpProps":
+   [
+	{"type":"min","param":-0.2},
+	{"type":"max","param":0.2}
+   ],
+
+   "TaskRefreshMonth":[1,4,7,10],
+   "TaskRefreshQuantity":[8,8],
+   "AdvTaskQuantity":0,
+   "DailyTaskResID":99,
+   "DailyTaskNum":6,
+   "DailyTaskBonus":4,
+   
+   "SiegeNum":3,
+   "RaidNum":6,
+   
+   "createClanTitle":1,
+   
+   "heirloomCreateLoot":30031,
+   "heirloomChildTransferLoot":30049,
+   "heirloomTransferLoot":30050,
+   "heirloomBindPerk":77,
+   "heirloomDischant":{
+      "res": [210],
+      "num": [1]
+   },
+   
+   "scarNum":5,
+   
+   "equipments":
+    [
+     {
+        "name":"SCRIPT_CONST_EQUIPMENTS_9",
+        "enname":"farmtools",
+        "type":9,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	{
+        "name":"SCRIPT_CONST_EQUIPMENTS_21",
+        "enname":"dagger",
+        "type":21,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+     {
+        "name":"SCRIPT_CONST_EQUIPMENTS_11",
+        "enname":"sword",
+        "type":11,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+     {
+        "name":"SCRIPT_CONST_EQUIPMENTS_12",
+        "enname":"sword2",
+        "type":12,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_13",
+        "enname":"axe",
+        "type":13,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_14",
+        "enname":"axe2",
+        "type":14,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_15",
+        "enname":"scimitar",
+        "type":15,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_16",
+        "enname":"pollarm",
+        "type":16,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_22",
+        "enname":"rapier",
+        "type":22,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_23",
+        "enname":"spear",
+        "type":23,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_24",
+        "enname":"lance",
+        "type":24,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_31",
+        "enname":"hammer",
+        "type":31,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_32",
+        "enname":"hammer2",
+        "type":32,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_33",
+        "type":33,
+		"enname":"chainmace",
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_34",
+        "enname":"pollarm2",
+        "type":34,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+	 },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_41",
+        "enname":"bow",
+        "type":41,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_42",
+        "enname":"bow",
+        "type":42,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_43",
+        "enname":"crossbow",
+        "type":43,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_44",
+        "enname":"heavycrossbow",
+        "type":44,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_51",
+		"enname":"scepter",
+        "type":51,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	{
+        "name":"SCRIPT_CONST_EQUIPMENTS_52",
+		"enname":"staff",
+        "type":52,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	{
+        "name":"SCRIPT_CONST_EQUIPMENTS_53",
+        "type":53,
+        "loc":3,
+		"slot":1,
+        "isShield":false
+     },
+	{
+        "name":"SCRIPT_CONST_EQUIPMENTS_54",
+        "type":54,
+        "loc":7,
+		"slot":1,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_61",
+		"enname":"shield",
+        "type":61,
+        "loc":4,
+		"slot":2,
+        "isShield":true
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_62",
+		"enname":"shield",
+        "type":62,
+        "loc":4,
+		"slot":2,
+        "isShield":true
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_63",
+		"enname":"shield",
+        "type":63,
+        "loc":4,
+		"slot":2,
+        "isShield":true
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_64",
+		"enname":"shield",
+        "type":64,
+        "loc":7,
+		"slot":2,
+        "isShield":true
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_71",
+        "type":71,
+        "loc":1,
+		"slot":3,
+        "isShield":false
+     },
+	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_72",
+        "type":72,
+        "loc":2,
+		"slot":4,
+        "isShield":false
+     },
+	 	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_73",
+        "type":73,
+        "loc":5,
+		"slot":5,
+        "isShield":false
+     },
+	 	 {
+        "name":"SCRIPT_CONST_EQUIPMENTS_74",
+        "type":74,
+        "loc":6,
+		"slot":6,
+        "isShield":false
+	}
+    ],
+    "armortype":[
+        {"name":"SCRIPT_CONST_ARMORTYPE_1","type":"1"},
+        {"name":"SCRIPT_CONST_ARMORTYPE_2","type":"2"},
+        {"name":"SCRIPT_CONST_ARMORTYPE_3","type":"3"},
+        {"name":"SCRIPT_CONST_ARMORTYPE_4","type":"4"}
+    ],
+
+  "jobtype":[
+    {"id":"1","name":"SCRIPT_CONST_JOBTYPE_1","icon":"images/icon/unittype/ty_zy_icon_qb.png","strong":"2","weak":"4"},
+    {"id":"2","name":"SCRIPT_CONST_JOBTYPE_2","icon":"images/icon/unittype/ty_zy_icon_gb.png","strong":"3","weak":"1"},
+    {"id":"3","name":"SCRIPT_CONST_JOBTYPE_3","icon":"images/icon/unittype/ty_zy_icon_js.png","strong":"4","weak":"2"},
+    {"id":"4","name":"SCRIPT_CONST_JOBTYPE_4","icon":"images/icon/unittype/ty_zy_icon_zbb.png","strong":"1","weak":"3"},
+    {"id":"5","name":"SCRIPT_CONST_JOBTYPE_5","icon":"images/icon/unittype/ty_zy_icon_dly.png","strong":"","weak":""}
+  ],
+  
+  "title":[
+    {"id":0,"name":"SCRIPT_CONST_TITLE_0","maleTitle":"SCRIPT_CONST_TITLE_MALE_0","femaleTitle":"SCRIPT_CONST_TITLE_FEMALE_0","datingSilverCost":10,"UnlockMateInfoCost":1, "SendLoveLetterCost":5,"icon":"images/icon/title/jz_juewei.png"},
+    {"id":1,"name":"SCRIPT_CONST_TITLE_1","maleTitle":"SCRIPT_CONST_TITLE_MALE_1","femaleTitle":"SCRIPT_CONST_TITLE_FEMALE_1","datingSilverCost":30,"UnlockMateInfoCost":2, "SendLoveLetterCost":10,"icon":"images/icon/title/jz_juewei1.png"},
+    {"id":2,"name":"SCRIPT_CONST_TITLE_2","maleTitle":"SCRIPT_CONST_TITLE_MALE_2","femaleTitle":"SCRIPT_CONST_TITLE_FEMALE_2","datingSilverCost":150,"UnlockMateInfoCost":10, "SendLoveLetterCost":50,"icon":"images/icon/title/jz_juewei2.png"},
+    {"id":3,"name":"SCRIPT_CONST_TITLE_3","maleTitle":"SCRIPT_CONST_TITLE_MALE_3","femaleTitle":"SCRIPT_CONST_TITLE_FEMALE_3","datingSilverCost":300,"UnlockMateInfoCost":20, "SendLoveLetterCost":100,"icon":"images/icon/title/jz_juewei3.png"},
+    {"id":4,"name":"SCRIPT_CONST_TITLE_4","maleTitle":"SCRIPT_CONST_TITLE_MALE_4","femaleTitle":"SCRIPT_CONST_TITLE_FEMALE_4","datingSilverCost":500,"UnlockMateInfoCost":30, "SendLoveLetterCost":150,"icon":"images/icon/title/jz_juewei4.png"}
+  ],
+  
+  "descentGrow":[
+    {"id":1,"name":"SCRIPT_CONST_DESCENTGROW_1","num":0,"color":{"r":"198","g":"207","b":"221"}},
+    {"id":2,"name":"SCRIPT_CONST_DESCENTGROW_2","num":0.1,"color":{"r":"115","g":"201","b":"160"}},
+    {"id":3,"name":"SCRIPT_CONST_DESCENTGROW_3","num":0.2,"color":{"r":"142","g":"214","b":"106"}},
+    {"id":4,"name":"SCRIPT_CONST_DESCENTGROW_4","num":0.35,"color":{"r":"128","g":"182","b":"232"}},
+    {"id":5,"name":"SCRIPT_CONST_DESCENTGROW_5","num":0.55,"color":{"r":"235","g":"189","b":"65"}},
+    {"id":6,"name":"SCRIPT_CONST_DESCENTGROW_6","num":0.75,"color":{"r":"212","g":"101","b":"255"}},
+    {"id":7,"name":"SCRIPT_CONST_DESCENTGROW_7","num":0.95,"color":{"r":"212","g":"101","b":"255"}},
+    {"id":8,"name":"SCRIPT_CONST_DESCENTGROW_8","num":1.2,"color":{"r":"212","g":"101","b":"255"}}
+  ],
+  
+  "prestige":[
+	{"level":0,"des":"SCRIPT_CONST_PRESTIGE_DES_0","desWorld":"SCRIPT_CONST_PRESTIGE_DESWORLD_0"},
+	{"level":1,"des":"SCRIPT_CONST_PRESTIGE_DES_1","desWorld":"SCRIPT_CONST_PRESTIGE_DESWORLD_1"},
+	{"level":2,"des":"SCRIPT_CONST_PRESTIGE_DES_2","desWorld":"SCRIPT_CONST_PRESTIGE_DESWORLD_2"},
+	{"level":3,"des":"SCRIPT_CONST_PRESTIGE_DES_3","desWorld":"SCRIPT_CONST_PRESTIGE_DESWORLD_3"},
+	{"level":4,"des":"SCRIPT_CONST_PRESTIGE_DES_4","desWorld":"SCRIPT_CONST_PRESTIGE_DESWORLD_4"},
+	{"level":5,"des":"SCRIPT_CONST_PRESTIGE_DES_5","desWorld":"SCRIPT_CONST_PRESTIGE_DESWORLD_5"}
+  ],
+  
+    "weddingPrestige":[
+	{"num":-100000,"des":"SCRIPT_CONST_WEDDINGPRESTIGE_1"},
+	{"num":-500,"des":"SCRIPT_CONST_WEDDINGPRESTIGE_2"},
+	{"num":0,"des":"SCRIPT_CONST_WEDDINGPRESTIGE_3"},
+	{"num":200,"des":"SCRIPT_CONST_WEDDINGPRESTIGE_4"},
+	{"num":20000,"des":"SCRIPT_CONST_WEDDINGPRESTIGE_4"}
+  ],
+  
+  "unlockMateInfoRate":[
+    {"id":1,"weight":500,"des":"相貌（从黑影直接变成显示脸）",
+		"randomDes":[
+            {"id":0, "pool":[{"des":"SCRIPT_CONST_UNLOCKMATE_1_0_0"}]},
+            {"id":1, "pool":[{"des":"SCRIPT_CONST_UNLOCKMATE_1_1_0"},{"des":"SCRIPT_CONST_UNLOCKMATE_1_1_1"}]}
+        ]
+	},
+    {"id":2,"weight":9000,"des":"名字",
+		"randomDes":[
+            {"id":0, "pool":[{"des":"SCRIPT_CONST_UNLOCKMATE_2_0_0"},{"des":"SCRIPT_CONST_UNLOCKMATE_2_0_1"}]},
+            {"id":1, "pool":[{"des":"SCRIPT_CONST_UNLOCKMATE_2_1_0"},{"des":"SCRIPT_CONST_UNLOCKMATE_2_1_1"}]}
+        ]
+    },
+    {"id":3,"weight":300,"des":"年龄",
+		"randomDes":[
+            {"id":0, "ages":[
+                {"id":20 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_20_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_20_1"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_20_2"}
+				]},
+                {"id":25 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_25_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_25_1"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_25_2"}
+				]},
+                {"id":30 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_30_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_30_1"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_30_2"}
+				]},
+                {"id":100 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_100_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_0_100_1"}
+				]}
+            ]}, 
+            {"id":1, "ages":[
+                {"id":20 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_20_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_20_1"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_20_2"}
+				]},
+                {"id":30 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_30_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_30_1"}
+				]},
+                {"id":40 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_40_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_40_1"}
+				]},
+                {"id":100 , "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_100_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_3_1_100_1"}
+				]}
+            ]}
+        ]
+    },
+    {"id":4,"weight":200,"des":"身份（平民、伯爵这些）",
+        "randomDes":[
+           {"id":0,"pool":[	{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_0"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_1"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_2"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_3"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_4"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_5"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_6"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_7"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_8"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_9"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_10"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_11"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_12"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_13"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_14"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_15"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_16"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_17"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_18"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_0_19"}
+							]},
+           {"id":1,"pool":[	{"des":"SCRIPT_CONST_UNLOCKMATE_4_1_0"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_1_1"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_1_2"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_1_3"}
+							]},
+           {"id":2,"pool":[	{"des":"SCRIPT_CONST_UNLOCKMATE_4_2_0"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_2_1"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_2_2"}
+							]},
+           {"id":3,"pool":[	{"des":"SCRIPT_CONST_UNLOCKMATE_4_3_0"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_3_1"}
+							]},
+           {"id":4,"pool":[	{"des":"SCRIPT_CONST_UNLOCKMATE_4_4_0"},
+								{"des":"SCRIPT_CONST_UNLOCKMATE_4_4_1"}
+							]}
+        ]
+    },
+    {"id":5,"weight":200,"des":"血统（从拥有的血统类型中平均随机。比如，有中国人的血统、有美国人的血统，分别是一条）",
+        "randomDes":"descentstats.xml"
+    },
+    {"id":6,"weight":200,"des":"血统部件（descent的partID对应的描述，有描述才进随机池）",
+        "randomDes":"descent.xml"
+    },
+    {"id":7,"weight":200,"des":"特性（perk对应的描述，有描述才进随机池）",
+        "randomDes":"perks.xml"
+    },
+    {"id":8,"weight":100,"des":"其他（没有意义的文本，低优先级，可以先不做）",
+		"randomDes":[
+				{"id":0, "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_1"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_2"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_3"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_4"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_5"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_6"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_7"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_8"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_9"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_10"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_11"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_12"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_13"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_14"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_15"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_16"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_17"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_18"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_0_19"}
+			]},
+				{"id":1, "pool":[
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_0"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_1"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_2"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_3"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_4"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_5"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_6"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_7"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_8"},
+					{"des":"SCRIPT_CONST_UNLOCKMATE_8_1_9"}
+			]}
+        ]
+    }
+  ],
+  
+  "cityBuildings":[
+    {"id":"godsday","name":"SCRIPT_CONST_CITYBUILDINGS_GODSDAY","icon":"images/icon/building/czrk_icon_sc.png"},
+    {"id":"singledayshop","name":"SCRIPT_CONST_CITYBUILDINGS_SINGLEDAYSHOP","icon":"images/icon/building/czrk_icon_sc.png"},
+    {"id":"date","name":"SCRIPT_CONST_CITYBUILDINGS_DATE","icon":"images/icon/building/czrk_icon_jr.png"},
+    {"id":"arena","name":"SCRIPT_CONST_CITYBUILDINGS_ARENA","icon":"images/icon/building/czrk_icon_jjc.png"},
+    {"id":"druidgod","name":"SCRIPT_CONST_CITYBUILDINGS_DRUIDGOD","icon":"images/icon/building/czrk_icon_sd.png"},
+    {"id":"zoya","name":"SCRIPT_CONST_CITYBUILDINGS_ZOYA","icon":"images/icon/building/czrk_icon_sc.png"},
+    {"id":"dialog","name":"SCRIPT_CONST_CITYBUILDINGS_DIALOG","icon":"images/icon/building/czrk_icon_dh.png"},
+    {"id":"task","name":"SCRIPT_CONST_CITYBUILDINGS_TASK","icon":"images/icon/building/czrk_icon_rw.png"},
+    {"id":"tavern","name":"SCRIPT_CONST_CITYBUILDINGS_TAVERN","icon":"images/icon/building/czrk_icon_jg.png"},
+    {"id":"changeJob","name":"SCRIPT_CONST_CITYBUILDINGS_CHANGEJOB","icon":"images/icon/building/czrk_icon_zz.png"},
+    {"id":"weaponshop","name":"SCRIPT_CONST_CITYBUILDINGS_WEAPONSHOP","icon":"images/icon/building/czrk_icon_wqsd.png"},
+    {"id":"armorshop","name":"SCRIPT_CONST_CITYBUILDINGS_ARMORSHOP","icon":"images/icon/building/czrk_icon_hjsd.png"},
+    {"id":"varietyshop","name":"SCRIPT_CONST_CITYBUILDINGS_VARIETYSHOP","icon":"images/icon/building/czrk_icon_sc.png"},
+    {"id":"prestigeshop","name":"SCRIPT_CONST_CITYBUILDINGS_PRESTIGESHOP","icon":"images/icon/building/czrk_icon_swsd.png"},
+    {"id":"titleshop","name":"SCRIPT_CONST_CITYBUILDINGS_TITLESHOP","icon":"images/icon/building/czrk_icon_jwsd.png"}
+  ],
+
+
+  "chapter":[
+    {"id":1,"name":"SCRIPT_CONST_CHAPTER_NAME_1","des":"SCRIPT_CONST_CHAPTER_DES_1","openMap":"chapter1"},
+    {"id":2,"name":"SCRIPT_CONST_CHAPTER_NAME_2","des":"SCRIPT_CONST_CHAPTER_DES_2","openMap":"chapter2"},
+    {"id":3,"name":"SCRIPT_CONST_CHAPTER_NAME_3","des":"SCRIPT_CONST_CHAPTER_DES_3","openMap":"chapter3"},
+    {"id":4,"name":"SCRIPT_CONST_CHAPTER_NAME_4","des":"SCRIPT_CONST_CHAPTER_DES_4","openMap":"chapter4"},
+    {"id":5,"name":"SCRIPT_CONST_CHAPTER_NAME_5","des":"SCRIPT_CONST_CHAPTER_DES_5","openMap":"chapter5"},
+	{"id":6,"name":"SCRIPT_CONST_CHAPTER_NAME_6","des":"SCRIPT_CONST_CHAPTER_DES_6","openMap":"chapter6"},
+	{"id":7,"name":"SCRIPT_CONST_CHAPTER_NAME_7","des":"SCRIPT_CONST_CHAPTER_DES_7","openMap":"chapter7"},
+	{"id":8,"name":"新区域","des":"","openMap":"chapter9"}
+  ],
+  
+  "skipMonth":[
+ 	{"gameMonth":87,"lootID":10001},
+	{"gameMonth":168,"lootID":10002},
+	{"gameMonth":255,"lootID":10003},
+	{"gameMonth":341,"lootID":10004},
+	{"gameMonth":9999999,"lootID":0}
+  ],
+  
+  "rankPrestige":[
+  	 {"min":1,"max":1,"pro":100000},
+   	 {"min":2,"max":2,"pro":90000}, 	 
+     {"min":3,"max":3,"pro":80000}, 
+     {"min":4,"max":20,"pro":60000},  	   
+     {"min":21,"max":100,"pro":30000}
+   ],
+   
+    "perksInjuredFilter":[2,3,5],
+
+   "createRolePart":[
+       {"type":"face","des":"SCRIPT_CONST_CREATREROLEPART_FACE"},
+	   {"type":"eyebrow","des":"SCRIPT_CONST_CREATREROLEPART_EYEBROW"},
+	   {"type":"eye","des":"SCRIPT_CONST_CREATREROLEPART_EYE"},
+	   {"type":"nose","des":"SCRIPT_CONST_CREATREROLEPART_NOSE"},
+	   {"type":"mouth","des":"SCRIPT_CONST_CREATREROLEPART_MOUTH"},
+	   {"type":"ear","des":"SCRIPT_CONST_CREATREROLEPART_EAR"},
+	   {"type":"hair","des":"SCRIPT_CONST_CREATREROLEPART_HAIR"},
+       {"type":"beard","des":"SCRIPT_CONST_CREATREROLEPART_BEARD"},
+	   {"type":"skin_color","des":"SCRIPT_CONST_CREATREROLEPART_SKINCOLOR"},
+	   {"type":"hair_color","des":"SCRIPT_CONST_CREATREROLEPART_HAIRCOLOR"}
+   ],
+
+
+   "userIDConstant": 16702650,
+   "rechargeResetDate": "2020/04/27"
+
+}

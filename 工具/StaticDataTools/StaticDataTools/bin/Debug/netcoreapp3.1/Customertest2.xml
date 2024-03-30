@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowWidth>28125</WindowWidth>
+    <WindowHeight>12540</WindowHeight>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <Alignment ss:Vertical="Center" />
+      <Borders />
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+      <Interior />
+      <NumberFormat />
+      <Protection />
+    </Style>
+    <Style ss:ID="s49">
+      <Alignment ss:Vertical="Center" />
+      <Borders />
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+      <Interior />
+      <NumberFormat />
+      <Protection />
+    </Style>
+    <Style ss:ID="s50">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+    </Style>
+    <Style ss:ID="s51">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+      <NumberFormat />
+    </Style>
+    <Style ss:ID="s52">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+      </Borders>
+      <Interior ss:Color="#D0CECE" ss:Pattern="Solid" />
+    </Style>
+    <Style ss:ID="s53">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+      </Borders>
+      <Interior ss:Color="#D0CECE" ss:Pattern="Solid" />
+      <NumberFormat />
+    </Style>
+    <Style ss:ID="s54">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+      <NumberFormat ss:Format="@" />
+    </Style>
+    <Style ss:ID="s55">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+      <Borders />
+      <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000" />
+      <Interior />
+      <NumberFormat />
+      <Protection />
+    </Style>
+  </Styles>
+  <Worksheet Name="aaa" xmlns="">
+    <Table>
+      <Row>
+        <Cell>
+          <Data Type="String">技能id</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能名</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">中文名</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能类型</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能等级</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">消耗AP</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">伤害类型</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能触发所需装备</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能效果</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能描述</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">中文描述</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">效果参数</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能简述</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能射程</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">伤害范围</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">伤害中心</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">可使用职业</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">是否在技能栏显示</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能图标</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能美术效果</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能是否可传授</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能传授所需属性</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能触发后可选目标</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">是否可触发反击</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能效果可选目标</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">客户端范围技能效果</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">技能学习前置属性要求</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">全体或单体技能</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data Type="String">int|skillId</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|skillName</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|chineseName</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|skillType</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|skilllevel</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|apConsume</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|damageType</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|triggerNeedEquipments</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|skillEffect</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|skillDes</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|chineseDes</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|effectParameter</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|skillShortDes</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|skillRange</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|damageScope</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|damageCentrePoint</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|usableJob</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|skillDisplay</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|skillIcon</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|skilArtlEffect</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|teachSkill</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|teachNeedNature</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|optionalTarget</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|triggerCounterattack</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|skillTarget</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|rangeSkillTarget</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">string|studySkillConditionNature</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">int|monomerOrGroup</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+        <Cell>
+          <Data Type="String">both</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

@@ -1,0 +1,12 @@
+{
+	"InputXmlFolder": "./../Input/Xml/",
+	"InputEnumXmlFolder": "./../Input/EnumXml/",
+	"Copy_Bin_C_ToFolder": "./../../Tools/Resources/Xml",
+	"Copy_StaticDataMgr_C_ToFolder": "./../../Tools/Xml",
+	"Copy_DataCode_C_ToFolder": "./../../Tools/Xml/Data",
+	"Copy_Json_C_ToFolder": "",
+	"Copy_Bin_S_ToFolder": "",
+	"Copy_StaticDataMgr_S_ToFolder": "",
+	"Copy_DataCode_S_ToFolder": "",
+	"Copy_Json_S_ToFolder": "./../../../LRS-BN-ServerClient/json"
+}

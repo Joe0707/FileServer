@@ -1,0 +1,97 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using System.IO;
+using System;
+using StaticData;
+using System.Reflection;
+using GlobalDefine;
+using StaticData.Data;
+using UnityEngine;
+using StaticDataTool;
+
+namespace StaticData
+{
+    public class DataToolMgr
+    {
+        private static DataToolMgr instance = null;
+        public static DataToolMgr Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new DataToolMgr();
+                return instance;
+            }
+            protected set { instance = value; }
+        }
+
+        // *************				data	 	***************
+		public Dictionary<uint, AllData> mAllDataMap = new Dictionary<uint, AllData>(); //All Data
+
+        //加载数据
+        public void LoadData()
+        {
+			LoadDataBinWorker<AllData>("All.bytes", mAllDataMap); //All Data
+
+						
+			//定义如型： void SheetNameDataProcess(ClassType data) 的函数, 会被自动调用
+
+            //设置进度
+            Console.WriteLine("Read All Data Done!");
+        }
+
+        //根据指定的数据文件名，创建流。 参数格式：“Strings.bytes”
+        private Stream OpenBinDataFile(string filename)
+        {//
+            var path = "Tools/" + FolderCfg.BinFolder() + filename.Substring(0, filename.Length - 6);
+            path = path.Replace('\\', '/');
+            return FileDes.DecryptDataToStream(ConfigManager.Instance.LoadConfigBytes(path));
+
+        }
+
+        void LoadDataBinWorker<ClassType>(string filename, object dic, Action<ClassType> process = null) where ClassType : BaseData, new()
+        {
+            Dictionary<uint, ClassType> dataMap = dic as Dictionary<uint, ClassType>;
+
+            BinaryReader br = null;
+            Stream ds = OpenBinDataFile(filename);
+            br = new BinaryReader(ds);
+            try
+            {
+                while (true)
+                {
+                    ClassType tNewData = new ClassType();
+                    tNewData.ReadFromStream(br);
+                    dataMap.Add(tNewData.mID, tNewData);
+                    if (process != null)
+                    {
+                        process(tNewData);
+                    }
+                }
+            }
+            catch (EndOfStreamException)
+            {
+                Console.WriteLine(filename + "Load Data Done");
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            finally
+            {
+                br.Close();
+                FileDes.CloseStream();
+            }
+            return;
+        }
+    }
+    //数据结构基类
+    public abstract class BaseData
+    {
+        public uint mID = 0; // ID
+        public abstract void ReadFromStream(BinaryReader br);
+    }
+}
+
+

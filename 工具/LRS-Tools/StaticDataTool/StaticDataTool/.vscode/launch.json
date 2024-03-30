@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Mac Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildAndCopy",
+            "program": "${workspaceFolder}/../Deploy/_Mac/StaticDataTool.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/../Deploy/_Mac",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Win Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildAndCopy",
+            "program": "${workspaceFolder}/../Deploy/_Win/StaticDataTool.dll",
+            "args": ["../Input/Xml/Actor.xml"],
+            "cwd": "${workspaceFolder}/../Deploy/_Win",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}

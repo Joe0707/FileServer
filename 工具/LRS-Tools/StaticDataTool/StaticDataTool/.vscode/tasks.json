@@ -1,0 +1,52 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "windows" :{
+                "command": "dotnet",
+                "type": "process",
+                "args": [
+                    "build",
+                    "${workspaceFolder}/StaticDataTool.csproj",
+                    "/property:GenerateFullPaths=true",
+                    "/consoleloggerparameters:NoSummary"
+                ],
+            },
+            "osx":{
+                "type": "shell",
+                "command": "msbuild",
+                "args": [
+                    "/property:GenerateFullPaths=true",
+                    "/t:build",
+                    "/consoleloggerparameters:NoSummary"
+                ],
+            },
+           
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "buildAndCopy",
+            "type": "shell",
+            "dependsOn": [
+                "build"
+            ],
+            "windows": {
+                "command": "copy ${workspaceFolder}/bin/Debug/netcoreapp3.1/* ${workspaceFolder}/../Deploy/_Win/"
+            },
+            "osx": {
+                "command": "cp ${workspaceFolder}/bin/Debug/netcoreapp3.1/* ${workspaceFolder}/../Deploy/_Mac/"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

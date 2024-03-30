@@ -1,0 +1,13 @@
+{
+	"InputXmlFolder" : "./../Input/Xml/",
+	
+	"Copy_Bin_C_ToFolder" : "./../../DestClientFolder/Bin_C",
+	"Copy_StaticDataMgr_C_ToFolder" : "./../../DestClientFolder/Code_C",
+	"Copy_DataCode_C_ToFolder" : "./../../DestClientFolder/Code_C/Data",
+	"Copy_Json_C_ToFolder" : "./../../DestClientFolder/Json_C",
+	
+	"Copy_Bin_S_ToFolder" : "./../../DestServerFolder/Bin_S",
+	"Copy_StaticDataMgr_S_ToFolder" : "./../../DestServerFolder/Code_S",
+	"Copy_DataCode_S_ToFolder" : "./../../DestServerFolder/Code_S/Data",
+	"Copy_Json_S_ToFolder" : "./../../DestServerFolder/Json_S"
+}
